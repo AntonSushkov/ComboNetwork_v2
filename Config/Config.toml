@@ -1,0 +1,58 @@
+# ===================
+# RPC URLs FOR DIFFERENT CHAINS
+# ===================
+[RPC]
+bnb = "https://rpc.ankr.com/bsc"
+opbnb = "https://opbnb-mainnet-rpc.bnbchain.org"
+
+# ===================
+# THREAD CONFIGURATIONS
+# ===================
+[threads]
+number_of_threads = 3  # Total number of concurrent threads to be executed.
+delay_between_threads = [10, 30] # Delay (in seconds) between the start of each thread, chosen randomly from the range.
+
+# ===================
+# SETTINGS
+# ===================
+[settings]
+cap_key = "you_api_key_capmonster"  # Capmonster API key.
+delay_action = [10, 30] # Delay (in seconds) between actions, chosen randomly from the range.
+max_retries_connect_server = 5 # Number of attempts to connect to the Discord server
+
+bnb_gwei = 1.0 # Gwei in BSC
+bnb_gas = 600000 # Gas in BSC
+
+opbnb_gwei = 0.0002 # Gwei in OpBSC
+opbnb_gas = 500000 # Gas in OpBSC
+
+# ===================
+# BRIDGE
+# ===================
+use_bnb_bridge = false # Enable/disable BNB -> OpBNB bridge via https://opbnb-bridge.bnbchain.org/deposit.
+use_zk_bridge = false # Enable/disable BNB -> OpBNB bridge via https://zkbridge.com/opbnb
+value_bridge_min = 0.00001 # Minimum BNB amount for the bridge
+value_bridge_max = 0.0001 # Maximum BNB amount for the bridge
+value_ridge_decimal = 5 # Decimal precision for BNB amounts.
+
+# ===================
+# MINTS
+# ===================
+mint_combonetwork = true # Enable/disable mint https://combonetwork.io/mint.
+mint_hunterswap = true # Enable/disable mint https://hunterswap.net/mint.
+mint_havenmarket = true # Enable/disable mint https://tests.havenmarket.xyz/mint.
+
+# ===================
+# SWAP
+# ===================
+execute_swap_opbnb_for_wbnb = false # Enable/Disable swapping of BNB for WBNB tokens.
+swap_opbnb_for_wbnb_reps = [1, 5] # Number of repetitions for BNB-WBNB token swap.
+value_swap_min = 0.00001 # Minimum opBNB amount for swap.
+value_swap_max = 0.0001 # Maximum opBNB amount for swap.
+value_swap_decimal = 5 # Decimal precision for opBNB amounts.
+
+execute_swap_wbnb_for_opbnb = false # Enable/Disable swapping of WBNB for BNB tokens.
+swap_wbnb_for_opbnb_reps = [1, 3] # Number of repetitions for WBNB-BNB token swap.
+value_swap_min2 = 0.00001 # Minimum WBNB amount for swap.
+value_swap_max2 = 0.00005 # Maximum WBNB amount for swap.
+value_swap_decimal2 = 5 # Decimal precision for WBNB amounts.

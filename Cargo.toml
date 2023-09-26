@@ -1,0 +1,32 @@
+[package]
+name = "combonetwork"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "cookies"] }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1"
+rand = "0.8.5"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+log = "0.4"
+fern = "0.6"
+humantime = "2.1"
+url = "2.4.1"
+isahc  = { version = "1.7.2", features = ["cookies", "text-decoding", "json"] }
+toml = "0.8.0"
+http = "0.2"
+web3 = "0.19.0"
+secp256k1 = "0.27.0"
+hex = "0.4"
+base64 = "0.21.4"
+regex = "1.9.5"
+csv = "1.1"
+lazy_static = "1.4.0"
+
+
+
