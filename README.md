@@ -55,7 +55,7 @@ Before launching the program, ensure the following files are correctly filled:
 - **mint_combonetwork**: Enable/disable mint https://combonetwork.io/mint.
 - **mint_hunterswap**: Enable/disable mint https://hunterswap.net/mint.
 - **mint_havenmarket**: Enable/disable mint https://tests.havenmarket.xyz/mint.
-####№ HavenMarket swaps:
+#### HavenMarket swaps:
 - **execute_swap_opbnb_for_wbnb**: Enable/Disable swapping of opBNB for WBNB tokens.
 - **swap_opbnb_for_wbnb_reps**: Number of repetitions for opBNB-WBNB token swap.
 - **value_swap_min**: Minimum opBNB amount for swap.
